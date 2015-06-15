@@ -1,0 +1,18 @@
+{% include head.html %}
+{% include header.html %}
+
+<div class="bodyWrapper clearfix">
+    <div class="mainContent clearfix">
+
+        <article class="mainContentInner textContent">
+            <h1>{{ page.headline}}</h1>
+            <h3 class="big-drop-cap">{{ page.intro }}</h3>
+            
+            {{content}}
+
+        </article>
+
+    </div><!-- .mainContent -->
+</div><!-- .bodyWrapper -->
+
+{% include footer.html %}

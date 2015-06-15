@@ -1,0 +1,21 @@
+
+// blockquote{
+//     text-align:center;
+//     position:relative;
+//     font-style:italic;
+//     padding:3em 0;
+//     margin:3em 2em;
+//     &:before{@include horizontalRule(top);}
+//     &:after{@include horizontalRule(bottom);}
+//     .quoteRunIn{
+//         // text-transform:uppercase;
+//         color:$primary;
+//     }
+//     p::first-letter{
+//         font-size:1em;
+//         line-height:1em;
+//         color:inherit;
+
+//     }
+//     p:after{display:none;}
+// }

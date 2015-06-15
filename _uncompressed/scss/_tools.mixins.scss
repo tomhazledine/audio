@@ -1,0 +1,64 @@
+// 01. REM font size with pixel fallback
+// 02. Selection Colours
+
+// 01. REM font size with pixel fallback
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+// This will output the font size in rem with a pixel fallback 
+
+// Usage
+// @include font-size(20px);
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+// This will output opacity with the MS opacity included
+
+// Usage
+// @include opacity(0.9);
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+// 05. Module Mixins
+@mixin horizontalRule($pos){
+  position:absolute;
+  @if $pos == top{
+    bottom:100%;
+  } @else if $pos == bottom{
+    top:100%;
+  }
+  left:50%;
+  content:"";
+  width:16rem;
+  margin-left:-8rem;
+  border-top:.1rem solid $black;
+  @include bp(d3){
+    width:5em;
+    margin-left:-2.5em;
+  }
+}
+@mixin bigFirstLetter{
+  &::first-letter{
+    font-size:1.5em;
+    color:$primary;
+  }
+  a:first-letter{
+    font-size:1.5em;
+    color:$primary;
+    transition:color,background;
+    transition-duration:.3s;
+  }
+  a:hover:first-letter{
+    color:$cream;
+    font-size:1.5em;
+  }
+}

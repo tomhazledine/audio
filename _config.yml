@@ -1,0 +1,19 @@
+name: Jekyll Boilerplate
+markdown: kramdown
+pygments: true
+kramdown:
+  auto_ids: false
+description: A demo site for SFAP
+url: http://test.dev # Local
+# url: http://test.com # Live
+exclude: [config.rb,
+          gruntfile.js,
+          root.css,
+          sass,
+          favicon_sizes,
+          social_icons,
+          package.json,
+          notes*.md,
+          img/design_files*,
+          img/raw*,
+          node_modules]

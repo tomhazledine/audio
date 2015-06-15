@@ -1,0 +1,61 @@
+// .header{
+//     font-size:1em;
+//     position:fixed;
+//     top:0;
+//     left:0;
+//     background:$black;
+//     color:$cream;
+//     width:100%;
+//     line-height:1;
+//     z-index:10;
+//     min-width:300px;
+//     transition:top;
+//     transition-duration:.2s;
+//     &.mainMenuOpen{top:0;}
+//     &.tuckedUp{
+//         top:-2em;
+//         &.mainMenuOpen{top:0;}
+//     }
+// }
+// .siteName{
+//     display:block;
+//     float:left;
+//     background:$black;
+//     margin:.5em;
+//     padding:.1em 0;
+//     line-height:1em;
+//     padding:.1em 1em;
+//     box-shadow:inset $primary .5em 0 0 0;
+//     transition:box-shadow;
+//     transition-duration:.4s;
+//     overflow:hidden;
+//     &:hover{
+//         color:$cream;
+//         background:$black;
+//         box-shadow:inset $primary 20em 0 0 0;
+//     }
+// }
+
+// .logo{
+//     font-size:.8em;
+//     display:block;
+//     padding:0;
+//     line-height:1;
+//     margin:0;
+//     color:$white;
+//     text-transform:uppercase;
+//     letter-spacing:.2em;
+// }
+
+// .mainMenuToggle{
+//     @extend %buttonReset;
+//     height:2em;
+//     width:2em;
+//     line-height:1;
+//     // margin:.2em .5em;
+//     float:right;
+//     // background:$red;
+//     position:relative;
+//     // z-index:3;
+//     &:focus{outline:none;}
+// }
