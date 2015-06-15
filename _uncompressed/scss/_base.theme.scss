@@ -14,19 +14,18 @@ body{
 }
 
 a{
-    // background:$grey;
     color:$primary;
     text-decoration:none;
-    // transition:color,background;
-    // transition-duration:.3s;
-    // &:hover{
-    //     color:$cream;
-    //     background:$primary;
-    // }
+
+    transition:color,background;
+    transition-duration:.2s;
+    &:hover{
+        color:$cream;
+        background:$primary;
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
-  // font-weight:bold;
   font-family:$display;
   text-transform:uppercase;
   letter-spacing:.2em;
@@ -35,92 +34,16 @@ h1,h2{
     font-size:1.4em;
 }
 
-// li{
-//     list-style:none;
-// }
-
 // Main Wrapper
 .bodyWrapper{
-    // background:$cream;
     width:80%;
     max-width:30em;
-    // min-width:$contentWidth + 2;
     margin:0 auto;
-    // padding-top:6em;
-    // padding-bottom:6em;
-    // @include bp(d3){
-        // min-width:0em;
-        // width:90%;
-        // margin:3em auto 1em;
-    // }
 }
-// .mainContent{
-//     width:28em;
-//     // width:$contentWidth;
-//     margin:0 auto;
-//     @include bp(d3){
-//         min-width:0em;
-//         width:90%;
-//     }
-// }
-// .mainContentInner{
-//     padding-bottom:3rem;
-// }
-// h1{
-//     position:relative;
-//     font-size:1.8em;
-//     line-height:1.2;
-//     text-align:center;
-//     font-weight:$bold;
-//     color:$black;
-//     a{color:inherit;background:none;}
-//     padding:4rem 0 10rem 0;
-//     &:after{@include horizontalRule(bottom);}
-//     margin:0 0 6rem 0;
-// }
-// h2{
-//     clear:both;
-//     font-size:1.5em;
-//     padding:1em 0;
-// }
-// h3{
-//     font-size:1.2em;
-//     padding:1em 0 0 0;
-// }
-// .top-link{
-//     display:block;
-//     padding:2em 0 0 0;
-//     font-weight:$bold;
-//     font-size:.8em;
-//     text-align:center;
-//     a{
-//         color:$grey;
-//         background:none;
-//         &:hover{color:$black;}
-//     }
-// }
-// hr{
-//     display:block;
-//     border:none;
-//     position:relative;
-//     margin:0 0 3em 0;
-//     margin:0 0 3rem 0;
-//     padding:0 0 3.5em 0;
-//     padding:0 0 3.5rem 0;
-//     &:after{
-//         @include horizontalRule(bottom);
-//     }
-// }
 
-// img{
-//     display:block;
-//     position:relative;
-//     z-index:2;
-//     max-width:100%;
-//     height:auto;
-//     padding:1em 0 0em 0;
-//     margin-bottom:-1.2em;
-// }
-// .shadowImg img{
-//     box-shadow:rgba($black,.4) 0 .2em .5em 0;
-// }
+hr,.divider{
+    margin:8em 0;
+    border:0;
+    height:1px;
+    background:$primary;
+}

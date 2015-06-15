@@ -29,6 +29,8 @@
             line-height:1;
             &:hover{
                 box-shadow:$primary 0 .2em 0 0;
+                color:inherit;
+                background:inherit;
             }
             @include bp(d1){
                 display:inline-block;

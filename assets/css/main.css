@@ -24,6 +24,13 @@ a::selection {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'decimaLight';
+  src: url('../fonts/decima/decima-light-webfont.eot');
+  src: url('../fonts/decima/decima-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/decima/decima-light-webfont.woff') format('woff'), url('../fonts/decima/decima-light-webfont.ttf') format('truetype'), url('../fonts/decima/decima-light-webfont.svg#decima-light') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
 /*
   codepen.io Embed Theme
   Author: Justin Perry <http://github.com/ourmaninamsterdam>
@@ -140,7 +147,7 @@ html {
 body {
   min-height: 100%;
   font-size: 1.6em;
-  font-family: "ff-tisa-web-pro", georgia, serif;
+  font-family: "decimaLight", "futura", "gil sans", sans-serif;
   font-weight: 400;
   color: #555;
   line-height: 1.6;
@@ -148,10 +155,17 @@ body {
 
 a {
   color: #00b7c6;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: color, background;
+          transition: color, background;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s; }
+  a:hover {
+    color: #efeeeb;
+    background: #00b7c6; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "decimaBold", 'futura', 'gil sans', sans-serif;
+  font-family: "decimaBold", "futura", "gil sans", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.2em; }
 
@@ -162,6 +176,12 @@ h1, h2 {
   width: 80%;
   max-width: 30em;
   margin: 0 auto; }
+
+hr, .divider {
+  margin: 8em 0;
+  border: 0;
+  height: 1px;
+  background: #00b7c6; }
 
 .mainMenu {
   display: block;
@@ -176,7 +196,7 @@ h1, h2 {
       margin: 2em 0 1em; } }
   .mainMenu li {
     display: inline-block;
-    font-family: "decimaBold", 'futura', 'gil sans', sans-serif;
+    font-family: "decimaBold", "futura", "gil sans", sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     margin: 0 0.5em;
@@ -198,7 +218,9 @@ h1, h2 {
       line-height: 1; }
       .mainMenu li a:hover {
         -webkit-box-shadow: #00b7c6 0 0.2em 0 0;
-                box-shadow: #00b7c6 0 0.2em 0 0; }
+                box-shadow: #00b7c6 0 0.2em 0 0;
+        color: inherit;
+        background: inherit; }
       @media (max-width: 800px) {
         .mainMenu li a {
           display: inline-block; } }

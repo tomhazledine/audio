@@ -7,7 +7,8 @@ A smooth user experience hinges on consistency. Every time you break from your b
 
 The **Style-Free Audio Player (SFAP)** aims to solve this problem for audio players. You bring the markup, you bring the CSS, SFAP brings the functionality.
 
-{:#over}
+<div class="divider" id="over"></div>
+
 ## 1. Overview
 
 {:.noFancyPs}
@@ -21,9 +22,8 @@ SFAP is all about keeping it simple. Every audio file you want to include in a p
 {:.noFancyPs}
 Anything else is up to you. As long as those elements are present for each audio file, the player will work.
 
----
+<div class="divider" id="install"></div>
 
-{:#install}
 ## 2. Installation
 
 {:.noFancyPs}
@@ -35,9 +35,8 @@ To install SFAP, just include the `styleFreeAudio.min.js` file at the bottom of 
 {:.noFancyPs}
 Then add the [initialization code](#init) to your custom JS file, and add the [required markup](#markup) to your page.
 
----
+<div class="divider" id="init"></div>
 
-{:#init}
 ## 3. Initialization
 
 {:.noFancyPs}
@@ -76,9 +75,8 @@ The simplest way to save this JSON data for **SFAP** to read is as a JS variable
         ];
     </script>
 
----
+<div class="divider" id="markup"></div>
 
-{:#markup}
 ## 4. Required Markup
 
 To give your audio player controls ("Play", "Pause") and song-data displays ("Song Length", "Time Played"), you need to add some classes to your markup.
