@@ -3,14 +3,28 @@
     <div class="svgInclude hidden">{% include /symbol/svg/sprite.symbol.svg %}</div>
 
     <header id="mainHeader" class="header clearfix">
+        <div class="headerInner">
         
-        <a class="siteName" href="{{ site.url }}/" title="{{ site.name }} homepage" rel="home">
-            <h2 class="logo">{{ site.name }}</h2>
-        </a>
+            <a class="siteName" href="{{ site.url }}/" title="{{ site.name }} homepage" rel="home">
+                <h1 class="logo">{{ site.name }}</h1>
+            </a>
+
+            <h3 class="mainTagline">{{ site.description }}</h3>
+
+            <nav class="mainMenuWrapper">
+
+                <ul class="mainMenu clearfix" role="navigation">
+                    <li><a href="#over">Overview</a></li>
+                    <li><a href="#install">Installation</a></li>
+                    <li><a href="#init">Initialization</a></li>
+                    <li><a href="#markup">Markup</a></li>
+                </ul>
+
+                <button class="mainMenuToggle"><span class="navicon"></span><span class="visuallyhidden">Main Menu</span></button>
+            </nav>
+
+        </div>
+
+        <a href="#top" class="sideLogo"></a>
 
     </header>
-
-    <nav class="mainMenuWrapper">
-        <ul class="mainMenu clearfix" role="navigation">
-        </ul>
-    </nav>

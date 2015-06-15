@@ -1,61 +1,63 @@
-// .header{
-//     font-size:1em;
-//     position:fixed;
-//     top:0;
-//     left:0;
-//     background:$black;
-//     color:$cream;
-//     width:100%;
-//     line-height:1;
-//     z-index:10;
-//     min-width:300px;
-//     transition:top;
-//     transition-duration:.2s;
-//     &.mainMenuOpen{top:0;}
-//     &.tuckedUp{
-//         top:-2em;
-//         &.mainMenuOpen{top:0;}
-//     }
-// }
-// .siteName{
-//     display:block;
-//     float:left;
-//     background:$black;
-//     margin:.5em;
-//     padding:.1em 0;
-//     line-height:1em;
-//     padding:.1em 1em;
-//     box-shadow:inset $primary .5em 0 0 0;
-//     transition:box-shadow;
-//     transition-duration:.4s;
-//     overflow:hidden;
-//     &:hover{
-//         color:$cream;
-//         background:$black;
-//         box-shadow:inset $primary 20em 0 0 0;
-//     }
-// }
+header{
+    text-align:center;
+    box-shadow:rgba($black,.3) 0 .2em .5em 0;
+    border-bottom:1px solid $primary;
+    position:fixed;
+    width:100%;
+    bottom:100%;
+    margin-bottom:-10em;
+    left:0;
+    background:$white;
+    z-index:2;
+    transition:margin-bottom;
+    transition-duration:.3s;
+    padding-top:10em;
+    &.tuckedUp{
+        margin-bottom:-3em;
+    }
+    @include bp(d1){
+        margin-bottom:-3em;
+        &.menuOpen,&.tuckedUp.menuOpen{
+            margin-bottom:-13em;
+        }
+    }
+}
 
-// .logo{
-//     font-size:.8em;
-//     display:block;
-//     padding:0;
-//     line-height:1;
-//     margin:0;
-//     color:$white;
-//     text-transform:uppercase;
-//     letter-spacing:.2em;
-// }
+.siteName{
+    padding:1em 0;
+}
 
-// .mainMenuToggle{
-//     @extend %buttonReset;
-//     height:2em;
-//     width:2em;
-//     line-height:1;
-//     // margin:.2em .5em;
-//     float:right;
-//     // background:$red;
-//     position:relative;
-//     // z-index:3;
-//     &:focus{outline:none;}
-// }
+.menuTopHeight{
+    padding-top:11em;
+    @include bp(d1){
+        padding-top:4em;
+    }
+}
+
+.mainTagline{
+    // box-shadow:rgba($black,.3) 0 .2em .5em 0;
+}
+
+.sideLogo{
+    // width:2em;
+    // height:2em;
+    background:$primary;
+    position:absolute;
+    bottom:.5em;
+    left:-3em;
+    transition:left;
+    transition-duration:1s;
+    display:block;
+    z-index:4;
+    border-radius:1em;
+    border:1em solid $primary;
+    border-bottom-color:$black;
+    border-right-color:$black;
+    @include bp(d1){
+        left:.5em;
+    }
+}
+
+.tuckedUp .sideLogo{
+    left:.5em;
+}

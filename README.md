@@ -1,9 +1,7 @@
-# Jekyll Boilerplate
+# Style-Free Audio Player
 
-Starter kit for Jekyll projects.
+## A lightweight style-free audio player.
 
-## DWM Gulp setup
+A smooth user experience hinges on consistency. Every time you break from your brand's styleguide to include an external widget, you're adding inconsistency.
 
-* JS & SCSS compilation and minification
-* Image optimization
-* Inline SVG icon generation
+The **Style-Free Audio Player (SFAP)** aims to solve this problem for audio players. You bring the markup, you bring the CSS, SFAP brings the functionality.

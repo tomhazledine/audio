@@ -1,62 +1,59 @@
-// html{
-//     font-size:62.5%;
-//     min-height:100%;
-//     @include bp(u1){
-//         font-size:100%;
-//     }
-// }
+html{
+    font-size:62.5%;
+    min-height:100%;
+}
 
-// body{
-//     min-height:100%;
-//     font-size:1.6em;
-//     font-family:$text;
-//     font-weight:$book;
-//     color:$black;
-//     line-height:1.6;
-//     min-width:300px;
+body{
+    min-height:100%;
+    font-size:1.6em;
+    font-family:$text;
+    font-weight:$book;
+    color:$black;
+    line-height:1.6;
+    min-width:300px;
+}
 
-//     // padding:10em;
-//     // background:$cream;
-//     // box-shadow:inset $white 0 0 0 5em;
-// }
+a{
+    // background:$grey;
+    color:$primary;
+    text-decoration:none;
+    // transition:color,background;
+    // transition-duration:.3s;
+    // &:hover{
+    //     color:$cream;
+    //     background:$primary;
+    // }
+}
 
-// a{
-//     background:$grey;
-//     color:$black;
-//     text-decoration:none;
-//     transition:color,background;
-//     transition-duration:.3s;
-//     &:hover{
-//         color:$cream;
-//         background:$primary;
-//     }
-// }
-
-// h1, h2, h3, h4, h5, h6 {
-//   font-weight:bold;
-//   font-family:$display;
-
-// }
+h1, h2, h3, h4, h5, h6 {
+  // font-weight:bold;
+  font-family:$display;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+}
+h1,h2{
+    font-size:1.4em;
+}
 
 // li{
 //     list-style:none;
 // }
 
-// // Main Wrapper
-// .bodyWrapper{
-//     background:$cream;
-//     width:80%;
-//     min-width:30em;
-//     // min-width:$contentWidth + 2;
-//     margin:5em auto 3em;
-//     padding-top:6em;
-//     padding-bottom:6em;
-//     @include bp(d3){
-//         min-width:0em;
-//         width:90%;
-//         margin:3em auto 1em;
-//     }
-// }
+// Main Wrapper
+.bodyWrapper{
+    // background:$cream;
+    width:80%;
+    max-width:30em;
+    // min-width:$contentWidth + 2;
+    margin:0 auto;
+    // padding-top:6em;
+    // padding-bottom:6em;
+    // @include bp(d3){
+        // min-width:0em;
+        // width:90%;
+        // margin:3em auto 1em;
+    // }
+}
 // .mainContent{
 //     width:28em;
 //     // width:$contentWidth;

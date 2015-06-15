@@ -1,101 +1,108 @@
-// .navicon{
-//     display:block;
-//     background:$cream;
-//     height:2px;
-//     // margin:.4rem auto;
-//     position:absolute;
-//     top:50%;
-//     left:50%;
-//     margin-top:-1px;
-//     margin-left:-8px;
-//     width:16px;
-//     transition:background;
-//     transition-duration:.2s;
-//     &:before,&:after{
-//         content:'';
-//         display:block;
-//         position:absolute;
-//         height:2px;
-//         background:$cream;
-//         width:16px;
-//         left:50%;
-//         margin-left:-8px;
-//         transform-origin:50% 50%;
-//         transition:transform,top,bottom;
-//         transition-duration:.2s;
-//     }
-//     &:before{
-//         top:-5px;
-//     }
-//     &:after{
-//         bottom:-5px;
-//     }
-// }
-// .mainMenuToggle.open .navicon{
-//     background:$black;
-//     &:before,&:after{
-//         width:12px;
-//     }
-//     &:before{
-//         transform:rotate(45deg);
-//         top:0;
-//     }
-//     &:after{
-//         transform:rotate(-45deg);
-//         bottom:0;
-//     }
-// }
+.mainMenu{
+    display:block;
+    margin:2em 0;
+    transition:margin;
+    transition-duration:.2s;
+    line-height:1;
+    @include bp(d1){
+        margin:2em 0 1em;
+    }
+    li{
+        display:inline-block;
+        font-family:$display;
+        text-transform:uppercase;
+        letter-spacing:.2em;
+        margin:0 .5em;
+        list-style:none;
+        line-height:1;
+        // box-shadow:$primary 0 0 0 0;
+        @include bp(d1){
+            display:block;
+            margin:1em 0;
+        }
+        a{
+            display:block;
+            color:$black;
+            transition:box-shadow;
+            transition-duration:.2s;
+            box-shadow:$primary 0 0 0 0;
+            line-height:1;
+            &:hover{
+                box-shadow:$primary 0 .2em 0 0;
+            }
+            @include bp(d1){
+                display:inline-block;
+            }
+        }
+    }
+}
 
-// .mainMenuWrapper{
-//     z-index:2;
-//     position:fixed;
-//     z-index:3;
-//     // top:0;
-//     // right:0;
-//     background:$primary;
-//     width:100%;
-//     display:table;
-//     bottom:0;//100%;
-//     left:100%;
-//     transition:bottom,left;
-//     transition-duration:.2s;
-//     // max-height:0;
-//     // overflow:hidden;
-//     &.open{
-//         bottom:0;
-//         left:0;
-//     }
-// }
+.tuckedUp .mainMenu{
+    margin:1em 0;
+    @include bp(d1){
+        margin:2em 0 1em;
+    }
+}
 
-// .mainMenu{
-//     list-style:none;
-//     display:table-cell;
-//     text-align:center;
-//     vertical-align:middle;
-//     font-size:1.2em;
-//     @include bp(d2){
-//         font-size:1.2em;
-//     }
-//     li{
-//         display:block;
-//         text-align:center;
-//         padding:.2em 0;
-//         a{
-//             font-family:$display;
-//             // text-transform:uppercase;
-//             // letter-spacing:.1em;
-//             line-height:1;
-//             display:inline-block;
-//             background:none;
-//             color:$black;
-//             font-weight:$bold;
-//             padding:.5em 0;
-//             box-shadow:inset $cream 0 -.2em 0 0;
-//             transition:box-shadow;
-//             transition-duration:.2s;
-//             &:hover{
-//                 box-shadow:inset $cream 0 -2em 0 0;
-//             }
-//         }
-//     }
-// }
+.mainMenuToggle{
+    @extend %buttonReset;
+    display:none;
+    width:1em;
+    height:1em;
+    position:relative;
+    margin:1em auto;
+    &:focus{
+        outline:none;
+    }
+    @include bp(d1){
+        display:block;
+    }
+}
+
+.navicon{
+    display:block;
+    background:$black;
+    height:2px;
+    // margin:.4rem auto;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-1px;
+    margin-left:-8px;
+    width:16px;
+    transition:background;
+    transition-duration:.2s;
+    &:before,&:after{
+        content:'';
+        display:block;
+        position:absolute;
+        height:2px;
+        background:$black;
+        width:16px;
+        left:50%;
+        margin-left:-8px;
+        transform-origin:50% 50%;
+        transition:transform,top,bottom;
+        transition-duration:.2s;
+    }
+    &:before{
+        top:-5px;
+    }
+    &:after{
+        bottom:-5px;
+    }
+}
+.mainMenuToggle.open .navicon{
+    background:$white;
+    &:before,&:after{
+        width:12px;
+    }
+    &:before{
+        transform:rotate(45deg);
+        top:0;
+    }
+    &:after{
+        transform:rotate(-45deg);
+        bottom:0;
+    }
+}

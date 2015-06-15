@@ -1,19 +1,19 @@
 // Typography etc.
 
-// Icon Font
-// @font-face {
-//   font-family:'iconFont';
-//   src:url('../fonts/icons/icons.eot');
-//   src:url('../fonts/icons/icons.eot?#iefix') format('embedded-opentype'),
-//   url('../fonts/icons/icons.woff') format('woff'),
-//   url('../fonts/icons/icons.ttf') format('truetype'),
-//   url('../fonts/icons/icons.svg#icons') format('svg');
-//   font-weight:normal;
-//   font-style:normal;
-// }
+// Decima Bold
+@font-face {
+    font-family:'decimaBold';
+    src:url('../fonts/decima/decima-bold-webfont.eot');
+    src:url('../fonts/decima/decima-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/decima/decima-bold-webfont.woff') format('woff'),
+        url('../fonts/decima/decima-bold-webfont.ttf') format('truetype'),
+        url('../fonts/decima/decima-bold-webfont.svg#decima-bold') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
 
 // Fonts
-$display:"brandon-grotesque",'futura','gil sans',sans-serif;
+$display:"decimaBold",'futura','gil sans',sans-serif;
 $text: "ff-tisa-web-pro",georgia,serif;//"futura-pt", sans-serif;
 $book:400;
 $bold:700;

@@ -1,10 +1,10 @@
-name: Jekyll Boilerplate
+name: Style-Free Audio Player
 markdown: kramdown
 pygments: true
 kramdown:
   auto_ids: false
-description: A demo site for SFAP
-url: http://test.dev # Local
+description: A lightweight style-free audio player.
+url: http://audio.dev # Local
 # url: http://test.com # Live
 exclude: [config.rb,
           gruntfile.js,
