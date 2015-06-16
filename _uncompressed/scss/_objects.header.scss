@@ -1,4 +1,5 @@
 header{
+    // display:none;
     text-align:center;
     box-shadow:rgba($black,.2) 0 .1em .3em 0;
     border-bottom:1px solid $primary;
@@ -10,7 +11,7 @@ header{
     background:$white;
     z-index:2;
     transition:margin-bottom;
-    transition-duration:.3s;
+    transition-duration:1s;
     padding-top:10em;
     &.tuckedUp{
         margin-bottom:-3em;
@@ -40,7 +41,7 @@ header{
 
 
 .menuTopHeight{
-    padding-top:31em;
+    padding-top:11em;
     @include bp(d1){
         padding-top:4em;
     }
@@ -57,20 +58,27 @@ header{
     position:absolute;
     bottom:.5em;
     left:-3em;
-    transition:left;
-    transition-duration:1s;
+    // transition:left;
+    // transition-duration:1s;
     display:block;
     z-index:4;
     // border-radius:1em;
     // border:1em solid $primary;
     // border-bottom-color:$black;
     // border-right-color:$black;
+    transform:scale(1);
+    transition:transform, left;// .2s;
+    transition-duration:.5s;
     @include bp(d1){
         left:.5em;
     }
     .sideLogoSvg{
         width:2em;
         height:2em;
+    }
+    &:hover{
+        background:inherit;
+        transform:scale(1.1);
     }
 }
 
