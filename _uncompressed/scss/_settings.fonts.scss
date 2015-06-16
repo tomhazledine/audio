@@ -13,20 +13,20 @@
 }
 
 // Decima Light
-@font-face {
-    font-family:'decimaLight';
-    src:url('../fonts/decima/decima-light-webfont.eot');
-    src:url('../fonts/decima/decima-light-webfont.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/decima/decima-light-webfont.woff') format('woff'),
-        url('../fonts/decima/decima-light-webfont.ttf') format('truetype'),
-        url('../fonts/decima/decima-light-webfont.svg#decima-light') format('svg');
-    font-weight:normal;
-    font-style:normal;
-}
+// @font-face {
+//     font-family:'decimaLight';
+//     src:url('../fonts/decima/decima-light-webfont.eot');
+//     src:url('../fonts/decima/decima-light-webfont.eot?#iefix') format('embedded-opentype'),
+//         url('../fonts/decima/decima-light-webfont.woff') format('woff'),
+//         url('../fonts/decima/decima-light-webfont.ttf') format('truetype'),
+//         url('../fonts/decima/decima-light-webfont.svg#decima-light') format('svg');
+//     font-weight:normal;
+//     font-style:normal;
+// }
 
 // Fonts
 $display:"decimaBold","futura","gil sans",sans-serif;
-$text: "decimaLight","futura","gil sans",sans-serif;
+$text: "ff-tisa-web-pro",georgia,serif;//"decimaLight","futura","gil sans",sans-serif;
 $book:400;
 $bold:700;
 $code: Menlo,Monaco,'Andale Mono','Lucida Console','Courier New',monospace;//"droid-sans-mono",monospace;

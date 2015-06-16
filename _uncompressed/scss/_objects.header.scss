@@ -1,11 +1,11 @@
 header{
     text-align:center;
-    box-shadow:rgba($black,.3) 0 .2em .5em 0;
+    box-shadow:rgba($black,.2) 0 .1em .3em 0;
     border-bottom:1px solid $primary;
     position:fixed;
     width:100%;
     bottom:100%;
-    margin-bottom:-10em;
+    margin-bottom:-30em;
     left:0;
     background:$white;
     z-index:2;
@@ -27,8 +27,20 @@ header{
     padding:1em 0;
 }
 
+.mainLogo{
+    width:20em;
+    height:20em;
+    margin:0 auto;
+    background-image:url('../images/heroLogo.png');
+    background-image:url('../images/heroLogo.svg');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+
 .menuTopHeight{
-    padding-top:11em;
+    padding-top:31em;
     @include bp(d1){
         padding-top:4em;
     }
@@ -39,9 +51,9 @@ header{
 }
 
 .sideLogo{
-    // width:2em;
-    // height:2em;
-    background:$primary;
+    width:2em;
+    height:2em;
+    // background:$primary;
     position:absolute;
     bottom:.5em;
     left:-3em;
@@ -49,12 +61,16 @@ header{
     transition-duration:1s;
     display:block;
     z-index:4;
-    border-radius:1em;
-    border:1em solid $primary;
-    border-bottom-color:$black;
-    border-right-color:$black;
+    // border-radius:1em;
+    // border:1em solid $primary;
+    // border-bottom-color:$black;
+    // border-right-color:$black;
     @include bp(d1){
         left:.5em;
+    }
+    .sideLogoSvg{
+        width:2em;
+        height:2em;
     }
 }
 
