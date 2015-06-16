@@ -115,8 +115,15 @@ html {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
-.textAreas {
-  font-size: 2rem; }
+.textContent {
+  font-size: 2rem;
+  margin-bottom: 4em; }
+
+.textContent ul {
+  font-style: italic;
+  font-size: 0.9em; }
+  .textContent ul li {
+    padding-bottom: 0.5em; }
 
 code {
   padding: 0 0.4em;
