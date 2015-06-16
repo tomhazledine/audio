@@ -3,7 +3,7 @@ var lastScrollTop = 0;
 var delta = 5;
 
 var header = $('#mainHeader');
-var navbarHeight = header.outerHeight();
+var navbarHeight = 100;//header.outerHeight();
 
 $(window).scroll(function(event){
     didScroll = true;
@@ -28,14 +28,10 @@ function hasScrolled() {
     if (scrollTop > navbarHeight){
         // Scroll Down
         header.addClass('tuckedUp');
-    } else {// if(scrollTop + $(window).height() < $(document).height()) {
+    } else {
         // Scroll Up
         header.removeClass('tuckedUp');
     }
 
     lastScrollTop = scrollTop;
 }
-// $(window).resize(function(){
-//     $('header').removeClass('nav-up').addClass('nav-down');
-//     $('.topNav ul').removeClass('down');
-// });

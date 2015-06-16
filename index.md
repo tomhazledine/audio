@@ -1,11 +1,27 @@
 ---
 layout: default
 title: Style-Free Audio Player
+
+audioLinks:
+- trackName: Hands
+  bandName: Four Tet
+  albumName: Rounds
+  url: http://eatenbymonsters.com/EbMBlog_mp3s/FourTet_Hands.mp3
+- trackName: The Woodpile
+  bandName: Frightened Rabbit
+  albumName: Pedestrian Verse
+  url: http://eatenbymonsters.com/EbMBlog_mp3s/FrightenedRabbit/TheWoodpile.mp3
+- trackName: Lost That Easy
+  bandName: Cold War Kids
+  albumName: Dear Miss Lonelyhearts
+  url: http://eatenbymonsters.com/EbMBlog_mp3s/CWK_LostThatEasy.mp3
 ---
 
 A smooth user experience hinges on consistency. Every time you break from your brand's styleguide to include an external widget, you're adding inconsistency.
 
 The **Style-Free Audio Player (SFAP)** aims to solve this problem for audio players. You bring the markup, you bring the CSS, SFAP brings the functionality.
+
+{% include audioPlayer.html %}
 
 <div class="divider" id="over"></div>
 
@@ -124,3 +140,6 @@ This is a HTML `range` input field that shows a visual representation of the aud
 To work, this `range` element must trigger the `sliderScrub()` function on input change, and must pass the value of the input (`this.value`) and the target audio file's index number.
 
 The position information is calculated as a percentage of the audio file's play-time, so set the input's `min` and `max` values to `0` and `100` respectively.
+
+{% include audioData.html %}
+
