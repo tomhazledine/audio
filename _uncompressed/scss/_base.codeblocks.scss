@@ -1,18 +1,28 @@
 code{
-    font-family:$code;
+    // font-family:$code;
     padding:0 .4em;
     font-size:.8em;
-    color:$cream;
-    background:$black;
+    // color:$cream;
+    background:$cream;
     word-wrap:break-word;
 }
 pre{
+    width:130%;
     margin:1em 0;
+    margin-left:-15%;
+    background:$cream !important;
+    box-shadow:rgba($black,.4) 0 .1em .3em 0;
+    @include bp(d1){
+        width:100%;
+        margin-left:0;
+    }
+
 }
 pre code{
     display:block;
     width:100%;
     overflow:auto;
+    background:$cream !important;
     padding:1em !important;
     word-wrap:normal;
 }

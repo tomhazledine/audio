@@ -10689,7 +10689,7 @@ function hasScrolled() {
 
     lastScrollTop = scrollTop;
 }
-
+hljs.initHighlightingOnLoad();
 var mainMenuToggle = $('.mainMenuToggle');
 var mainMenu = $('.mainMenuWrapper');
 var header = $('#mainHeader');

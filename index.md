@@ -45,6 +45,9 @@ Anything else is up to you. As long as those elements are present for each audio
 {:.noFancyPs}
 To install SFAP, just include the `styleFreeAudio.min.js` file at the bottom of your HTML before your custom javascript.
 
+<!--<script src="https://gist.github.com/tomhazledine/b12bb19289f0d5023094.js"></script>-->
+
+{:.language-javascript}
     <script src="/path/to/styleFreeAudio.min.js"></script>
     <script src="/path/to/yourCustom.js"></script>
 
