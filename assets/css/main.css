@@ -172,6 +172,9 @@ h1, h2, h3, h4, h5, h6 {
 h1, h2 {
   font-size: 1.4em; }
 
+p {
+  margin-bottom: 1em; }
+
 .bodyWrapper {
   width: 80%;
   max-width: 30em;
@@ -447,6 +450,9 @@ header {
 
 .tuckedUp .sideLogo {
   left: 0.5em; }
+
+#audioExamples {
+  margin: 4em 0; }
 
 .playlistSongWrapper {
   margin-bottom: 1em; }
