@@ -126,8 +126,9 @@ html {
     padding-bottom: 0.5em; }
 
 code {
+  font-family: Menlo, Monaco, "Andale Mono", "Lucida Console", "Courier New", monospace;
   padding: 0 0.4em;
-  font-size: 0.8em;
+  font-size: 1.4rem;
   background: #f0f0f0;
   word-wrap: break-word; }
 
@@ -592,6 +593,85 @@ header {
   background-size: 100% auto;
   background-position: bottom center;
   background-repeat: no-repeat; }
+  @media (max-width: 800px) {
+    .mountains {
+      display: none; } }
+
+.callsToAction {
+  margin: 2em 0;
+  text-align: center; }
+
+.callToAction {
+  display: inline-block;
+  background: #00b7c6;
+  color: #ffffff;
+  margin: 0 0.5em;
+  font-family: "decimaBold", "futura", "gil sans", sans-serif;
+  padding: 0.7em 1em 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  border-radius: 0.5em;
+  line-height: 1;
+  font-size: 0.8em;
+  position: relative;
+  -webkit-transition: top, -webkit-box-shadow;
+          transition: top, box-shadow;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  top: 0;
+  -webkit-box-shadow: rgba(85, 85, 85, 0.3) 0 0.3em 0.3em 0, #00a6b2 0 0.1em 0 0;
+          box-shadow: rgba(85, 85, 85, 0.3) 0 0.3em 0.3em 0, #00a6b2 0 0.1em 0 0; }
+  .callToAction:hover {
+    color: #ffffff;
+    top: -0.2em;
+    -webkit-box-shadow: rgba(85, 85, 85, 0.3) 0 0.5em 0.3em 0, #00a6b2 0 0.1em 0 0;
+            box-shadow: rgba(85, 85, 85, 0.3) 0 0.5em 0.3em 0, #00a6b2 0 0.1em 0 0; }
+  @media (max-width: 800px) {
+    .callToAction {
+      margin-bottom: 1em; } }
+
+.githubLink {
+  display: block;
+  position: fixed;
+  top: -6em;
+  right: 2em;
+  background: #00b7c6;
+  padding-top: 4em;
+  width: 6em;
+  font-size: 0.8em;
+  color: #ffffff;
+  text-align: center;
+  -webkit-transition: top;
+          transition: top;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-box-shadow: rgba(85, 85, 85, 0.3) 0 0.3em 0.3em 0, #00a6b2 0 0.1em 0 0;
+          box-shadow: rgba(85, 85, 85, 0.3) 0 0.3em 0.3em 0, #00a6b2 0 0.1em 0 0; }
+  .githubLink span {
+    display: block;
+    padding: 1em;
+    line-height: 1; }
+  .githubLink .githubLogo {
+    width: 2em;
+    height: 2em;
+    fill: #ffffff;
+    margin: 1em auto; }
+  .githubLink:hover {
+    top: 0;
+    color: #ffffff; }
+  @media (max-width: 800px) {
+    .githubLink {
+      display: none; } }
+
+.credits {
+  text-align: center;
+  font-size: 0.8em;
+  font-family: "decimaBold", "futura", "gil sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-top: 8em;
+  border-top: 1px solid #00b7c6;
+  padding-top: 1em; }
 
 .hidden {
   display: none !important;

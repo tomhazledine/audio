@@ -4,7 +4,23 @@
 <div class="bodyWrapper menuTopHeight clearfix">
     <div class="mainContent textContent clearfix">
 
+    {% if page.callsToAction %}
+
+        <div class="callsToAction">
+
+            {% for cta in page.callsToAction %}
+                <a href="{{ cta.url }}" class="callToAction">{{ cta.text }}</a>
+            {% endfor %}
+
+        </div>
+
+    {% endif %}
+
     {{content}}
+
+    <div class="credits">
+        <p>Built and maintained by <a href="http://tomhazledine.com">Tom Hazledine</a></p>
+    </div>
 
     </div><!-- .mainContent -->
 </div><!-- .bodyWrapper -->

@@ -4,8 +4,8 @@ pygments: true
 kramdown:
   auto_ids: false
 description: A lightweight style-free audio player.
-url: http://audio.dev # Local
-# url: http://tomhazledine.com/audioDemo # Live
+# url: http://audio.dev # Local
+url: http://tomhazledine.com/audioDemo # Live
 exclude: [config.rb,
           gruntfile.js,
           root.css,

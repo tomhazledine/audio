@@ -2,6 +2,12 @@
 layout: default
 title: Style-Free Audio Player
 
+callsToAction:
+- url: \#install
+  text: Install v1.0.0
+- url: https://github.com/tomhazledine/stylefreeaudio
+  text: View Source
+
 audioLinks:
 - trackName: Hands
   bandName: Four Tet
@@ -50,6 +56,9 @@ To install SFAP, just include the `styleFreeAudio.min.js` file at the bottom of 
 {:.language-javascript}
     <script src="/path/to/styleFreeAudio.min.js"></script>
     <script src="/path/to/yourCustom.js"></script>
+
+{:.callsToAction}
+<a href="{{ site.url }}/downloads/styleFreeAudio.min.js" class="callToAction">Download the JS</a>
 
 {:.noFancyPs}
 Then add the [initialization code](#init) to your custom JS file, and add the [required markup](#markup) to your page.

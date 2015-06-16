@@ -1,0 +1,38 @@
+.githubLink{
+    display:block;
+    position:fixed;
+    top:-6em;
+    right:2em;
+    // height:20em;
+    background:$primary;
+    padding-top:4em;
+    width:6em;
+    font-size:.8em;
+    color:$white;
+    text-align:center;
+    transition:top;
+    transition-duration:.2s;
+    box-shadow:
+        rgba($black,.3) 0 .3em .3em 0,
+        darken($primary,4%) 0 .1em 0 0,
+        //rgba($black,.2) 0 .3em .3em 0,
+        ;
+    span{
+        display:block;
+        padding:1em;
+        line-height:1;
+    }
+    .githubLogo{
+        width:2em;
+        height:2em;
+        fill:$white;
+        margin:1em auto;
+    }
+    &:hover{
+        top:0;
+        color:$white;
+    }
+    @include bp(d1){
+        display:none;
+    }
+}
