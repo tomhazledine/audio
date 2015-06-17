@@ -108,6 +108,7 @@ function StyleFreeAudio(songData,playerWrapper){
         } else {
             for (i = 0; i < playPauseButtons.length; i++) {
                 _removeClass(playPauseButtons[i], 'songPlaying');
+                _addClass(playPauseButtons[i], 'songPaused');
             }
             playSong(targetSong);
             _addClass(this,'songPlaying');
