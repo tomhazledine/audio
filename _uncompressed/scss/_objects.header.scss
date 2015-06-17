@@ -26,11 +26,22 @@ header{
 
 .siteName{
     padding:1em 0;
+    .subName{
+        line-height:1;
+        color:$black;
+    }
+    .mainName{
+        line-height:1;
+        font-size:3em;
+        color:$primary;
+        padding:1rem 0;
+    }
+
 }
 
 .mainLogo{
     width:20em;
-    height:20em;
+    height:14em;
     margin:0 auto;
     background-image:url('../images/heroLogo.png');
     background-image:url('../images/heroLogo.svg');
@@ -48,6 +59,10 @@ header{
 }
 
 .mainTagline{
+    font-family:$text;
+    letter-spacing:0;
+    text-transform:none;
+    font-style:italic;
     // box-shadow:rgba($black,.3) 0 .2em .5em 0;
 }
 

@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Style-Free Audio Player
+subtitle: Style-Free Audio Player
+title: SFAP.js
 
 callsToAction:
 - url: \#install
@@ -23,26 +24,20 @@ audioLinks:
   url: http://eatenbymonsters.com/EbMBlog_mp3s/CWK_LostThatEasy.mp3
 ---
 
-A smooth user experience hinges on consistency. Every time you break from your brand's styleguide to include an external widget, you're adding inconsistency.
-
-The **Style-Free Audio Player (SFAP)** aims to solve this problem for audio players. You bring the markup, you bring the CSS, SFAP brings the functionality.
+Styling default HTML `<audio>` elements is a pain. We *should* be able to do it with CSS, but sadly at the moment we have to battle the "shadow DOM" to get anywhere. Thankfully we can use the Web Audio API to recreate our own audio player. One we can style with CSS. One where *we* have control of the markup.
 
 {% include audioPlayer.html %}
 
+The **Style-Free Audio Player (SFAP)** is a handy tool to help control how our audio is displayed. Store details of the audio you want to include in JSON (currently all you need is the path to the file). Then pass it through the `StyleFreeAudio()` function in your javascript along with a reference to your markup. SFAP then links your markup to the audio functionality.
+
 <div class="divider" id="over"></div>
 
-## 1. Overview
+### SFAP gives you:
 
-{:.noFancyPs}
-SFAP is all about keeping it simple. Every audio file you want to include in a page gets:
-
-* A play/pause button.
-* A *songPlayTimer* element that displays the current playhead position of the audio file in minutes and seconds (MM:SS).
-* A *songDuration* element that displays the total length of the audio file in minutes and seconds (MM:SS).
-* A HTML range input field that shows a visual representation of the audio file's play progress, and can manually change the play position of the audio file.
-
-{:.noFancyPs}
-Anything else is up to you. As long as those elements are present for each audio file, the player will work.
+* A play/pause `<button>`.
+* A `songPlayTimer` element that displays the current playhead position of the audio file in minutes and seconds (MM:SS).
+* A `songDuration` element that displays the total length of the audio file in minutes and seconds (MM:SS).
+* A HTML `<range>` input field that shows a visual representation of the audio file's play progress, and can manually change the play position of the audio file.
 
 <div class="divider" id="install"></div>
 
@@ -152,6 +147,14 @@ This is a HTML `range` input field that shows a visual representation of the aud
 To work, this `range` element must trigger the `sliderScrub()` function on input change, and must pass the value of the input (`this.value`) and the target audio file's index number.
 
 The position information is calculated as a percentage of the audio file's play-time, so set the input's `min` and `max` values to `0` and `100` respectively.
+
+<div class="divider" id="contrib"></div>
+
+## Contribute
+
+This started out as a "scratch your own itch" tool for a specific project. I'm open-sourcing it in the hope it might prove useful to others too. There are *a few* audio player tools/plugins out there, but most have too many features for my needs. I like simplicity, and I like any JS I add to my sites to be as lean as possible.
+
+I'm hoping SFAP can be of use to as many people as possible. If you have an improvement or bug-fix or new feature, get in touch! Make a pull request on the [SFAP Github repo](https://github.com/tomhazledine/stylefreeaudio). I'm just getting started with "open source", so I'd be very glad of any help or suggestions or advice.
 
 {% include audioData.html %}
 
