@@ -52,9 +52,9 @@ header{
 
 
 .menuTopHeight{
-    padding-top:11em;
+    padding-top:16em;
     @include bp(d1){
-        padding-top:4em;
+        padding-top:0em;
     }
 }
 
@@ -99,4 +99,13 @@ header{
 
 .tuckedUp .sideLogo{
     left:.5em;
+}
+
+.moblieHeader{
+    display:none;
+    text-align:center;
+    margin-top:5em;
+    @include bp(d1){
+        display:block;
+    }
 }

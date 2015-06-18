@@ -459,10 +459,10 @@ header {
   background-position: center; }
 
 .menuTopHeight {
-  padding-top: 11em; }
+  padding-top: 16em; }
   @media (max-width: 800px) {
     .menuTopHeight {
-      padding-top: 4em; } }
+      padding-top: 0em; } }
 
 .mainTagline {
   font-family: "ff-tisa-web-pro", georgia, serif;
@@ -499,6 +499,14 @@ header {
 
 .tuckedUp .sideLogo {
   left: 0.5em; }
+
+.moblieHeader {
+  display: none;
+  text-align: center;
+  margin-top: 5em; }
+  @media (max-width: 800px) {
+    .moblieHeader {
+      display: block; } }
 
 #audioExamples {
   margin: 4em 0; }
@@ -605,7 +613,7 @@ header {
 
 .mountains {
   width: 100%;
-  height: 20em;
+  height: 15em;
   background: #00b7c6;
   background-image: url('../images/mountains.png');
   background-image: url('../images/mountains.svg');

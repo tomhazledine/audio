@@ -43,26 +43,20 @@ The **Style-Free Audio Player (SFAP)** is a handy tool to help control how our a
 
 ## 2. Installation
 
-{:.noFancyPs}
 To install SFAP, just include the `styleFreeAudio.min.js` file at the bottom of your HTML before your custom javascript.
 
-<!--<script src="https://gist.github.com/tomhazledine/b12bb19289f0d5023094.js"></script>-->
-
-{:.language-javascript}
     <script src="/path/to/styleFreeAudio.min.js"></script>
     <script src="/path/to/yourCustom.js"></script>
 
 {:.callsToAction}
 <a href="{{ site.url }}/downloads/styleFreeAudio.min.js" class="callToAction">Download the JS</a>
 
-{:.noFancyPs}
 Then add the [initialization code](#init) to your custom JS file, and add the [required markup](#markup) to your page.
 
 <div class="divider" id="init"></div>
 
 ## 3. Initialization
 
-{:.noFancyPs}
 To initialize SFAP you need two things: Audio data, and a wrapper element for your player markup. Pass these into the SFAP javascript function and you're good to go.
 
     // Get the element that wraps all your player's markup.
@@ -74,7 +68,6 @@ To initialize SFAP you need two things: Audio data, and a wrapper element for yo
 
 ### Audio Data
 
-{:.noFancyPs}
 This comes in the form of a simple JSON object that stores the URL for each audio file you want to be able to play on the page.
 
     {
@@ -84,7 +77,6 @@ This comes in the form of a simple JSON object that stores the URL for each audi
         "url": "path/to/audio/file/two.mp3"
     }
 
-{:.noFancyPs}
 The simplest way to save this JSON data for **SFAP** to read is as a JS variable, either within your own javascript file or inline in the page html itself.
 
     <script>
@@ -106,7 +98,6 @@ To give your audio player controls ("Play", "Pause") and song-data displays ("So
 
 ### The play/pause button.
 
-{:.noFancyPs}
 The play/pause button needs three classes and a custom data attribute for it to work properly.
 
     <button class="playlistSongTrigger songPaused notPlayedYet" data-song-index="0">Play/Pause</button>
@@ -121,7 +112,6 @@ The play/pause button needs three classes and a custom data attribute for it to 
 
 ### The play timer element.
 
-{:.noFancyPs}
 This displays the current playhead position of the audio file in minutes and seconds (MM:SS).
 
 This can be any element with the class `songPlayTimer`. When the current playhead changes, the inner HTML of the element is updated to the current position in MM:SS format.
@@ -131,19 +121,16 @@ This can be any element with the class `songPlayTimer`. When the current playhea
 
 ### The audio duration element.
 
-{:.noFancyPs}
 This displays the total length of the audio file in minutes and seconds (MM:SS).
 
     <span class="songDuration">0:00</span>
 
 ### The current play position slider.
 
-{:.noFancyPs}
 This is a HTML `range` input field that shows a visual representation of the audio file's play progress, and can manually change the play position of the audio file.
 
     <input type="range" class="songProgressSlider" min="0" max="100" value="0" oninput="myAudioPlayer.sliderScrub(this.value, 1)">
 
-{:.noFancyPs}
 To work, this `range` element must trigger the `sliderScrub()` function on input change, and must pass the value of the input (`this.value`) and the target audio file's index number.
 
 The position information is calculated as a percentage of the audio file's play-time, so set the input's `min` and `max` values to `0` and `100` respectively.
