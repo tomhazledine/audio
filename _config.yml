@@ -5,7 +5,7 @@ kramdown:
   auto_ids: false
 description: A lightweight style-free javascript audio player.
 # url: http://audio.dev # Local
-url: http://tomhazledine.com/audioDemo # Live
+url: http://tomhazledine.com/audio # Live
 exclude: [config.rb,
           gruntfile.js,
           root.css,
