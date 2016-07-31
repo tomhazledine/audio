@@ -1,27 +1,15 @@
 ---
 layout: default
 title: Style-Free Audio Player
-
-audioLinks:
-- trackName: Hands
-  bandName: Four Tet
-  albumName: Rounds
-  url: http://eatenbymonsters.com/EbMBlog_mp3s/FourTet_Hands.mp3
-- trackName: The Woodpile
-  bandName: Frightened Rabbit
-  albumName: Pedestrian Verse
-  url: http://eatenbymonsters.com/EbMBlog_mp3s/FrightenedRabbit/TheWoodpile.mp3
-- trackName: Lost That Easy
-  bandName: Cold War Kids
-  albumName: Dear Miss Lonelyhearts
-  url: http://eatenbymonsters.com/EbMBlog_mp3s/CWK_LostThatEasy.mp3
 ---
 
 A smooth user experience hinges on consistency. Every time you break from your brand's styleguide to include an external widget, you're adding inconsistency.
 
-The **Style-Free Audio Player (SFAP)** aims to solve this problem for audio players. You bring the markup, you bring the CSS, SFAP brings the functionality.
+The **Style-Free Audio Player (SFAP)** aims to solve this problem for audio players. SFAP brings the functionality, and you control the styling.
 
-{% include audioPlayer.html %}
+<audio src="http://audio.eatenbymonsters.com/reviews/coldWarKids/lostThatEasy.mp3" title="Lost that easy" data-artist="Cold War Kids" controls>
+  Your browser does not support the <code>audio</code> element.
+</audio>
 
 <div class="divider" id="over"></div>
 
