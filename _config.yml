@@ -1,11 +1,11 @@
-name: SFAP.js
+name: Style-Free Audio Player
 markdown: kramdown
 pygments: true
 kramdown:
   auto_ids: false
-description: A lightweight style-free javascript audio player.
+description: A lightweight style-free audio player.
 # url: http://audio.dev # Local
-url: http://tomhazledine.com/audio # Live
+url: http://tomhazledine.com/audio/ # Live
 exclude: [config.rb,
           gruntfile.js,
           root.css,

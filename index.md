@@ -13,15 +13,15 @@ audioLinks:
 - trackName: Hands
   bandName: Four Tet
   albumName: Rounds
-  url: http://eatenbymonsters.com/EbMBlog_mp3s/FourTet_Hands.mp3
+  url: http://audio.eatenbymonsters.com/reviews/fourTet/hands.mp3
 - trackName: The Woodpile
   bandName: Frightened Rabbit
   albumName: Pedestrian Verse
-  url: http://eatenbymonsters.com/EbMBlog_mp3s/FrightenedRabbit/TheWoodpile.mp3
+  url: http://audio.eatenbymonsters.com/reviews/frightenedRabbit/theWoodpile.mp3
 - trackName: Lost That Easy
   bandName: Cold War Kids
   albumName: Dear Miss Lonelyhearts
-  url: http://eatenbymonsters.com/EbMBlog_mp3s/CWK_LostThatEasy.mp3
+  url: http://audio.eatenbymonsters.com/reviews/coldWarKids/lostThatEasy.mp3
 ---
 
 Styling default HTML `<audio>` elements is a pain. We *should* be able to do it with CSS, but sadly at the moment we have to battle the "shadow DOM" to get anywhere. Thankfully we can use the Web Audio API to recreate our own audio player. One we can style with CSS. One where *we* have control of the markup.
@@ -144,4 +144,3 @@ This started out as a "scratch your own itch" tool for a specific project. I'm o
 I'm hoping SFAP can be of use to as many people as possible. If you have an improvement or bug-fix or new feature, get in touch! Make a pull request on the [SFAP Github repo](https://github.com/tomhazledine/stylefreeaudio). I'm just getting started with "open source", so I'd be very glad of any help or suggestions or advice.
 
 {% include audioData.html %}
-
