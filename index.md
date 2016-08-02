@@ -28,9 +28,9 @@ Styling default HTML `<audio>` elements is a pain. We *should* be able to do it 
 
 {% include audioPlayer.html %}
 
-The **Style-Free Audio Player (SFAP)** is a handy tool to help control how our audio is displayed. Store details of the audio you want to include in JSON (currently all you need is the path to the file). Then pass it through the `StyleFreeAudio()` function in your javascript along with a reference to your markup. SFAP then links your markup to the audio functionality.
+<div id="over"></div>
 
-<div class="divider" id="over"></div>
+The **Style-Free Audio Player (SFAP)** is a handy tool to help control how our audio is displayed. Store details of the audio you want to include in JSON (currently all you need is the path to the file). Then pass it through the `StyleFreeAudio()` function in your javascript along with a reference to your markup. SFAP then links your markup to the audio functionality.
 
 ### Turn this:
 

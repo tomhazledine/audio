@@ -1,6 +1,7 @@
 name: Style-Free Audio Player
 markdown: kramdown
-pygments: true
+hightlighter: rouge
+pygments: false
 kramdown:
   auto_ids: false
 description: A lightweight style-free audio player.
