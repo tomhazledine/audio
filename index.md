@@ -32,6 +32,48 @@ The **Style-Free Audio Player (SFAP)** is a handy tool to help control how our a
 
 <div class="divider" id="over"></div>
 
+### Turn this:
+
+    <audio src="path.to/audio/file.mp3"></audio>
+
+The basic `html5` audio element.
+
+### Into this:
+
+    <div class="customAudioPlayer" data-song-index="0">
+      <div class="loader"></div>
+      <button class="playerTrigger"><span class="buttonText">play</span></button>
+      <div class="metaWrapper">
+        <span class="titleDisplay">Song Title</span>
+        <span class="artistDisplay">Artist Name</span>
+      </div>
+      <div class="timingsWrapper">
+        <span class="songPlayTimer">0:00</span>
+        <div class="songProgressSliderWrapper">
+          <div class="pseudoProgressBackground"></div>
+          <div class="pseudoProgressIndicator"></div>
+          <div class="pseudoProgressPlayhead"></div>
+          <input type="range" min="0" max="100" class="songProgressSlider">
+        </div>
+        <span class="songDuration">3:51</span>
+      </div>
+      <div class="songVolume">
+        <button class="songMuteButton">Mute</button>
+        <div class="songVolumeLabelWrapper">
+          <span class="songVolumeLabel">Volume</span>
+          <span class="songVolumeValue">10</span>
+        </div>
+        <div class="songVolumeSliderWrapper">
+          <div class="pseudoVolumeBackground"></div>
+          <div class="pseudoVolumeIndicator"></div>
+          <div class="pseudoVolumePlayhead"></div>
+          <input type="range" min="0" max="1" step="0.1" class="songVolumeSlider">
+        </div>
+      </div>
+    </div>
+
+Each individual element of the audio player is a vanilla DOM element that can be styled however you like using `css`.
+
 ### SFAP gives you:
 
 * A play/pause `<button>`.
