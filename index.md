@@ -32,13 +32,11 @@ Styling default HTML `<audio>` elements is a pain. We *should* be able to do it 
 
 The **Style-Free Audio Player (SFAP)** is a handy tool to help control how our audio is displayed. Store details of the audio you want to include in JSON (currently all you need is the path to the file). Then pass it through the `StyleFreeAudio()` function in your javascript along with a reference to your markup. SFAP then links your markup to the audio functionality.
 
-### Turn this:
+The default `<audio>` element makes for nice clean markup, but leaves many aspects inaccessible to our `css`. To allow us to style each part of the audio player specifically, SFAP.js turns this:
 
     <audio src="path.to/audio/file.mp3"></audio>
 
-The basic `html5` audio element.
-
-### Into this:
+Into this:
 
     <div class="customAudioPlayer" data-song-index="0">
       <div class="loader"></div>
