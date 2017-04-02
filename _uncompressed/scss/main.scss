@@ -1,40 +1,42 @@
 .toucheDeRouge{color:#ff0000;}
-// // 01. SETTINGS
+// 01. SETTINGS
 @import "settings.colours";
 @import "settings.fonts";
 @import "settings.breakpoints";
 
-// // 02. TOOLS
-// @import "tools.codepen-embed";
+// 02. TOOLS
 @import "tools.placeholders";
 @import "tools.mixins";
 @import "tools.general";
 @import "tools.github-gist";
 
-// // 03. GENERIC
+// 03. GENERIC
 @import "generic.reset";
 @import "generic.base";
 
-// // // 04. BASE
+// 04. BASE
 @import "base.contentareas";
 @import "base.codeblocks";
 @import "base.theme";
-@import "base.range";
 
-// // // 05. OBJECTS
+// 05. OBJECTS
 @import "objects.mainmenu";
 @import "objects.header";
 @import "objects.footer";
-@import "objects.blockquote";
-@import "objects.audioPlayerBase";
 @import "objects.logoSvg";
 @import "objects.bodyImage";
 @import "objects.callToAction";
 @import "objects.githublink";
 @import "objects.credits";
 
-// // // 06. COMPONENTS
+// 06. COMPONENTS
+@import "player.eatenbymonsters";
+@import "player.itunes";
+@import "player.pitchfork";
+@import "player.soundcloud";
+@import "player.basic";
+@import "player.bbc";
 
-// // // 07. TRUMPS
+// 07. TRUMPS
 @import "trumps.utilities";
 @import "trumps.theme";

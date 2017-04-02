@@ -41,7 +41,7 @@ p{
 // Main Wrapper
 .bodyWrapper{
     width:80%;
-    max-width:30em;
+    max-width:40em;
     margin:0 auto;
 }
 
@@ -50,4 +50,14 @@ hr,.divider{
     border:0;
     height:1px;
     background:$primary;
+}
+
+img{
+    width:130%;
+    margin:1em 0 0 0;
+    margin-left:-15%;
+    @include bp(d1){
+        width:100%;
+        margin-left:0;
+    }
 }
