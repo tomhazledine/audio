@@ -19,8 +19,6 @@ setInterval(function() {
 function hasScrolled() {
     var scrollTop = document.body.scrollTop;
 
-    console.log(scrollTop);
-
     // Make sure they scroll more than delta
     if(Math.abs(lastScrollTop - scrollTop) <= delta)
         return;
