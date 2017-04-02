@@ -1,11 +1,11 @@
-var didScroll;
+var didScroll = false;
 var lastScrollTop = 0;
 var delta = 5;
 
-var header = $('#mainHeader');
+var header = document.getElementById('mainHeader');
 var navbarHeight = 100;//header.outerHeight();
 
-$(window).scroll(function(event){
+window.addEventListener('scroll', function(e) {
     didScroll = true;
 });
 
@@ -17,7 +17,9 @@ setInterval(function() {
 }, 250);
 
 function hasScrolled() {
-    var scrollTop = $(this).scrollTop();
+    var scrollTop = document.body.scrollTop;
+
+    console.log(scrollTop);
 
     // Make sure they scroll more than delta
     if(Math.abs(lastScrollTop - scrollTop) <= delta)
@@ -27,10 +29,12 @@ function hasScrolled() {
     // This is necessary so you never see what is "behind" the navbar.
     if (scrollTop > navbarHeight){
         // Scroll Down
-        header.addClass('tuckedUp');
+        // header.addClass('tuckedUp');
+        noQuery.addClass(header,'tuckedUp');
     } else {
         // Scroll Up
-        header.removeClass('tuckedUp');
+        // header.removeClass('tuckedUp');
+        noQuery.removeClass(header,'tuckedUp');
     }
 
     lastScrollTop = scrollTop;
