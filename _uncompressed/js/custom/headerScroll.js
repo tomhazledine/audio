@@ -1,39 +1,44 @@
-var didScroll = false;
-var lastScrollTop = 0;
-var delta = 5;
+var did_scroll = false;
+var last_scroll_top = 0;
+var min_scroll_threshold = 5;
 
 var header = document.getElementById('mainHeader');
-var navbarHeight = 100;//header.outerHeight();
+var navbar_height = 100;
 
+
+// When the window scrolls, make a note of it.
 window.addEventListener('scroll', function(e) {
-    didScroll = true;
+    did_scroll = true;
 });
 
+// Check scroll-state every 0.25 seconds (a very
+// primitive attempt at a "debounce").
 setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
+    if (did_scroll) {
+        // If the page has scrolled, trigger the scroll function.
+        has_scrolled();
+        did_scroll = false;
     }
 }, 250);
 
-function hasScrolled() {
-    var scrollTop = document.body.scrollTop;
 
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - scrollTop) <= delta)
+function has_scrolled() {
+    var scroll_top = document.body.scrollTop;
+
+    // Only continue if the page has scrolled further than min_scroll_threshold
+    if ( Math.abs( last_scroll_top - scroll_top ) <= min_scroll_threshold ) {
         return;
+    }
 
     // If they scrolled down and are past the navbar, add class .tuckedUp.
     // This is necessary so you never see what is "behind" the navbar.
-    if (scrollTop > navbarHeight){
+    if (scroll_top > navbar_height){
         // Scroll Down
-        // header.addClass('tuckedUp');
         noQuery.addClass(header,'tuckedUp');
     } else {
         // Scroll Up
-        // header.removeClass('tuckedUp');
         noQuery.removeClass(header,'tuckedUp');
     }
 
-    lastScrollTop = scrollTop;
+    last_scroll_top = scroll_top;
 }
