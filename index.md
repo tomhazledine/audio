@@ -4,19 +4,21 @@ subtitle: A css-friendly audio player
 title: Picobel.js
 
 callsToAction:
-- url: \#usage
+- url: \#installation
   text: Install v0.2.0
 - url: https://github.com/tomhazledine/picobel
   text: View Source
 ---
 
+<div id="overview"></div>
+
 <audio src="http://audio.eatenbymonsters.com/reviews/coldWarKids/lostThatEasy.mp3" title="Lost that easy" data-artist="Cold War Kids" controls>
-  Your browser does not support the <code>audio</code> element.
+    Your browser does not support the <code>audio</code> element.
 </audio>
 
 Picobel.js (pronounced *peek-o-bell*, as in *decibel*) is a lightweight dependency-free Javascript tool that converts html audio tags into styleable markup.
 
-<div class="divider" id="overview"></div>
+<div class="divider"></div>
 
 ## Why would I need this?
 
@@ -40,9 +42,9 @@ Into this:
 
 **Picobel** allows you to create custom styles for your audio players: providing cross-browser consistency and a seamless integration with your existing brand styles.
 
-<div class="divider" id="usage"></div>
+<div class="divider" id="installation"></div>
 
-## Usage
+## Installation
 
 To use **Picobel.js** you'll need to include the `picobel.min.js` file in your project. This needs to be called before your custom scripts, and ideally in the `<foot>` of your page.
 
@@ -62,6 +64,10 @@ Then initialize the function. For simplicity, the example below does this in an 
     </script>
 
 When your page loads, Picobel will replace any default `<audio>` elements with a block of custom-markup, complete with classes that you can use to apply your custom CSS.
+
+<div class="divider" id="usage"></div>
+
+## Usage
 
 If you're using a theme other than "basic", you'll need to specify the theme name in the options object when you intialise Picobel.
 
@@ -108,6 +114,14 @@ This adds a class to the container of each audio element, so if you've made your
         </div>
     </div>
 
+## Setting "artist" and "track name" values
+
+Applying metadata to your audio file requires adding data-attributes to your `<audio>` markup. Picobel gets the track name from the regular `title` attribute, and looks for artist information in the `data-artist` attribute. For the demo at the top of this page, the markup looks like this:
+
+    <audio src="http://audio.eatenbymonsters.com/reviews/coldWarKids/lostThatEasy.mp3" title="Lost that easy" data-artist="Cold War Kids" controls>
+        Your browser does not support the <code>audio</code> element.
+    </audio>
+
 <div class="divider" id="themes"></div>
 
 ## Pre-made themes
@@ -116,10 +130,10 @@ Picobel comes with many pre-made themes. To use a theme, make sure you've downlo
 
     <!-- Initialise Picobel with a theme-->
     <script>
-        Picobel({themename:"chosenThemeName"});
+        Picobel( { themename: "chosenThemeName" } );
     </script>
 
-So if you wanted to use the "iTunes" theme, your Picobel call would look like this: `Picobel({themename:"itunes"});`. If you don't explicitly choose a theme, then the Default theme will be used.
+So if you wanted to use the "iTunes" theme, your Picobel call would look like this: `Picobel({themename:"itunes"});`. If you don't explicitly choose a theme, then the Default theme will be used. The current options are: `skeleton`, `itunes`, `bbc`, `soundcloud`, `pitchfork`, & `eatenbymonsters`.
 
 You can see them all in action in the [Picobel.js CodePen Collection](http://codepen.io/collection/XpZEor/), and see screenshots of each featured theme on this page:
 
