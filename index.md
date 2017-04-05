@@ -112,23 +112,37 @@ This adds a class to the container of each audio element, so if you've made your
 
 ## Pre-made themes
 
-![Basic theme](assets/images/theme_basic.png)
-*Basic theme*
+Picobel comes with many pre-made themes. To use a theme, make sure you've downloaded the correct stylesheet from the [Picobel CSS library](https://github.com/tomhazledine/picobel/tree/master/css) and then reference the chosen themename as an option when you initialize Picobel in your JS.
 
-![BBC theme](assets/images/theme_bbc.png)
-*BBC-esque theme*
+    <!-- Initialise Picobel with a theme-->
+    <script>
+        Picobel({themename:"chosenThemeName"});
+    </script>
+
+So if you wanted to use the "iTunes" theme, your Picobel call would look like this: `Picobel({themename:"itunes"});`. If you don't explicitly choose a theme, then the Default theme will be used.
+
+You can see them all in action in the [Picobel.js CodePen Collection](http://codepen.io/collection/XpZEor/), and see screenshots of each featured theme on this page:
+
+![Default theme](assets/images/theme_basic.png)
+*Default theme. [View the this theme on CodePen](http://codepen.io/tomhazledine/pen/VpNqYO)*
+
+![Skeleton theme](assets/images/theme_skeleton.png)
+*Skeleton theme (use this as a jumping-off point for your own styles). [View the this theme on CodePen](http://codepen.io/tomhazledine/pen/zZXyGa)*
+
+![BBC iPlayer theme](assets/images/theme_bbc.png)
+*BBC iPlayer-esque theme. [View the this theme on CodePen](http://codepen.io/tomhazledine/pen/kXZaKL)*
 
 ![iTunes theme](assets/images/theme_itunes.png)
-*iTunes-esque theme*
+*iTunes-esque theme. [View the this theme on CodePen](http://codepen.io/tomhazledine/pen/NAyWQW)*
 
 ![Soundcloud theme](assets/images/theme_soundcloud.png)
-*Soundcloud-esque theme*
+*Soundcloud-esque theme. [View the this theme on CodePen](http://codepen.io/tomhazledine/pen/VpNqjJ)*
 
 ![Pitchfork theme](assets/images/theme_pitchfork.png)
-*Pitchfork-esque theme*
+*Pitchfork-esque theme. [View the this theme on CodePen](http://codepen.io/tomhazledine/pen/OpGrXN)*
 
 ![Eaten by Monsters theme](assets/images/theme_ebm.png)
-*Eaten by Monsters theme*
+*Eaten by Monsters theme. [View the this theme on CodePen](http://codepen.io/tomhazledine/pen/gmyZLP)*
 
 <div class="divider" id="contribute"></div>
 
