@@ -4,7 +4,7 @@ subtitle: A css-friendly audio player
 title: Picobel.js
 
 callsToAction:
-- url: \#useage
+- url: \#usage
   text: Install v0.2.0
 - url: https://github.com/tomhazledine/picobel
   text: View Source
@@ -150,7 +150,7 @@ You can see them all in action in the [Picobel.js CodePen Collection](http://cod
 
 This started out as a "scratch your own itch" tool for a specific project. I'm open-sourcing it in the hope it might prove useful to others too. There are *a few* audio player tools/plugins out there, but most have too many features for my needs. I like simplicity, and I like any JS I add to my sites to be as lean as possible.
 
-I'm hoping Picobel can be of use to as many people as possible. If you have an improvement or bug-fix or new feature, get in touch! Make a pull request on the [Picpbel.js Github repo](https://github.com/tomhazledine/picobel). I'm just getting started with "open source", so I'd be very glad of any help or suggestions or advice.
+I'm hoping Picobel can be of use to as many people as possible. If you have an improvement or bug-fix or new feature, get in touch! Make a pull request on the [Picobel.js Github repo](https://github.com/tomhazledine/picobel). I'm just getting started with "open source", so I'd be very glad of any help or suggestions or advice.
 
 * MIT license
 * No dependencies
