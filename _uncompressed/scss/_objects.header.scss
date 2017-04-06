@@ -3,7 +3,7 @@ header{
     text-align:center;
     box-shadow:rgba($black,.2) 0 .1em .3em 0;
     border-bottom:1px solid $primary;
-    position:fixed;
+    // position:fixed;
     width:100%;
     bottom:100%;
     margin-bottom:-30em;
@@ -19,6 +19,7 @@ header{
     @include bp(d1){
         margin-bottom:-3em;
         &.menuOpen,&.tuckedUp.menuOpen{
+            position:fixed;
             margin-bottom:-13em;
         }
     }
