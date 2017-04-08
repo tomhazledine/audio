@@ -6,23 +6,23 @@ header{
     // position:fixed;
     width:100%;
     bottom:100%;
-    margin-bottom:-30em;
+    // margin-bottom:-30em;
     left:0;
     background:$white;
     z-index:2;
     transition:margin-bottom;
     transition-duration:1s;
     padding-top:10em;
-    &.tuckedUp{
-        margin-bottom:-3em;
-    }
-    @include bp(d1){
-        margin-bottom:-3em;
-        &.menuOpen,&.tuckedUp.menuOpen{
-            position:fixed;
-            margin-bottom:-13em;
-        }
-    }
+    // &.tuckedUp{
+    //     margin-bottom:-3em;
+    // }
+    // @include bp(d1){
+    //     margin-bottom:-3em;
+    //     &.menuOpen,&.tuckedUp.menuOpen{
+    //         position:fixed;
+    //         margin-bottom:-13em;
+    //     }
+    // }
 }
 
 .siteName{
@@ -37,7 +37,6 @@ header{
         color:$primary;
         padding:1rem 0;
     }
-
 }
 
 .mainLogo{
@@ -52,12 +51,12 @@ header{
 }
 
 
-.menuTopHeight{
-    padding-top:16em;
-    @include bp(d1){
-        padding-top:0em;
-    }
-}
+// .menuTopHeight{
+//     padding-top:16em;
+//     @include bp(d1){
+//         padding-top:0em;
+//     }
+// }
 
 .mainTagline{
     font-family:$text;
@@ -98,9 +97,9 @@ header{
     }
 }
 
-.tuckedUp .sideLogo{
-    left:.5em;
-}
+// .tuckedUp .sideLogo{
+//     left:.5em;
+// }
 
 .moblieHeader{
     display:none;

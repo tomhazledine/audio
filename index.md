@@ -2,6 +2,17 @@
 layout: default
 subtitle: A css-friendly audio player
 title: Picobel.js
+menu:
+- title: Overview
+  id: overview
+- title: Install
+  id: installation
+- title: Use
+  id: usage
+- title: Themes
+  id: themes
+- title: Contribute
+  id: contribute
 
 callsToAction:
 - url: \#installation

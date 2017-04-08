@@ -1,6 +1,6 @@
 <body id="top">
     
-    <div class="mountains"></div>
+    <!-- <div class="mountains"></div> -->
     
     <div class="svgInclude hidden">{% include /symbol/svg/sprite.symbol.svg %}</div>
 
@@ -23,11 +23,9 @@
             <nav class="mainMenuWrapper">
 
                 <ul class="mainMenu clearfix" role="navigation">
-                    <li><a href="#overview">Overview</a></li>
-                    <li><a href="#installation">Install</a></li>
-                    <li><a href="#usage">Use</a></li>
-                    <li><a href="#themes">Themes</a></li>
-                    <li><a href="#contribute">Contribute</a></li>
+                    {% for menuLink in page.menu %}
+                        <li><a href="#{{ menuLink.id }}">{{ menuLink.title }}</a></li>
+                    {% endfor %}
                 </ul>
 
                 <button class="mainMenuToggle"><span class="navicon"></span><span class="visuallyhidden">Main Menu</span></button>
