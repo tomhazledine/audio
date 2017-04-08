@@ -1,6 +1,9 @@
 .textContent{
     font-size:2rem;
     margin-bottom:4em;
+    @include bp(d1){
+        font-size:1.6rem;
+    }
 }
 
 .textContent ul{

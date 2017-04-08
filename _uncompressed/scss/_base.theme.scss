@@ -43,6 +43,9 @@ p{
     width:80%;
     max-width:40em;
     margin:0 auto;
+    @include bp(d1){
+        width:90%;
+    }
 }
 
 hr,.divider{
@@ -50,6 +53,9 @@ hr,.divider{
     border:0;
     height:1px;
     background:$primary;
+    @include bp(d1){
+        margin:2em 0;
+    }
 }
 
 img{
