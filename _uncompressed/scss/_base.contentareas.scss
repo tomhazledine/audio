@@ -6,11 +6,15 @@
     }
 }
 
+.textContent ol,
 .textContent ul{
     font-style:italic;
     font-size:.9em;
     li{
         padding-bottom:.5em;
+    }
+    @include bp(d1){
+        padding-left:1em;
     }
 }
 
