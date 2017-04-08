@@ -16,13 +16,18 @@ header{
     // &.tuckedUp{
     //     margin-bottom:-3em;
     // }
-    // @include bp(d1){
-    //     margin-bottom:-3em;
-    //     &.menuOpen,&.tuckedUp.menuOpen{
-    //         position:fixed;
-    //         margin-bottom:-13em;
-    //     }
-    // }
+    @include bp(d1){
+        // margin-bottom:-3em;
+        // &.menuOpen,&.tuckedUp.menuOpen{
+        top:0;
+        position:fixed;
+        padding-top:3em;
+        .headerInner{
+            display:none;
+            // margin-bottom:-13em;
+        }
+        // }
+    }
 }
 
 .siteName{
@@ -36,6 +41,17 @@ header{
         font-size:3em;
         color:$primary;
         padding:1rem 0;
+    }
+    @inlcude bp(d1){
+        display:block;
+        padding:1em 2em;
+        .subName{
+            max-width:80%;
+            margin:0 auto;
+        }
+        .mainName{
+            font-size:2em;
+        }
     }
 }
 
@@ -63,6 +79,10 @@ header{
     letter-spacing:0;
     text-transform:none;
     font-style:italic;
+    @include bp(d1){
+        padding:0 1em;
+        line-height:1.4;
+    }
     // box-shadow:rgba($black,.3) 0 .2em .5em 0;
 }
 
