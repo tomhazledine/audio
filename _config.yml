@@ -4,8 +4,8 @@ hightlighter: rouge
 kramdown:
   auto_ids: false
 description: A lightweight wrapper for HTML audio. Bring your own markup and CSS.
-# url: http://picobel.dev # Local
-url: http://audio.tomhazledine.com # Live
+url: http://picobel.dev # Local
+# url: http://audio.tomhazledine.com # Live
 exclude: [config.rb,
           gruntfile.js,
           root.css,

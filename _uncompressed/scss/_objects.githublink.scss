@@ -1,7 +1,7 @@
 .githubLink{
     display:block;
     position:fixed;
-    top:-6em;
+    top:-10em;
     right:2em;
     // height:20em;
     background:$primary;
@@ -29,7 +29,7 @@
         margin:1em auto;
     }
     &:hover{
-        top:0;
+        top:-4em;
         color:$white;
     }
     @include bp(d1){
