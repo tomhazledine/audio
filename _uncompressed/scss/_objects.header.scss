@@ -5,7 +5,7 @@ header{
     border-bottom:1px solid $primary;
     // position:fixed;
     width:100%;
-    bottom:100%;
+    // bottom:100%;
     // margin-bottom:-30em;
     left:0;
     background:$white;
@@ -21,10 +21,16 @@ header{
         // &.menuOpen,&.tuckedUp.menuOpen{
         top:0;
         position:fixed;
-        padding-top:3em;
+        padding-top:0;
+        height:auto;
         .headerInner{
-            display:none;
+            // display:none;
             // margin-bottom:-13em;
+        }
+        .siteName,
+        .mainTagline,
+        .mainLogo{
+            display:none;
         }
         // }
     }
@@ -42,16 +48,16 @@ header{
         color:$primary;
         padding:1rem 0;
     }
-    @inlcude bp(d1){
-        display:block;
-        padding:1em 2em;
-        .subName{
-            max-width:80%;
-            margin:0 auto;
-        }
-        .mainName{
-            font-size:2em;
-        }
+    @include bp(d1){
+        // display:block;
+        // padding:1em 2em;
+        // .subName{
+        //     max-width:80%;
+        //     margin:0 auto;
+        // }
+        // .mainName{
+        //     font-size:2em;
+        // }
     }
 }
 
