@@ -5,7 +5,7 @@
     transition-duration:.2s;
     line-height:1;
     @include bp(d1){
-        margin:2em 0 1em;
+        margin:1em 0;
     }
     li{
         display:inline-block;
@@ -41,9 +41,9 @@
 
 .tuckedUp .mainMenu{
     margin:1em 0;
-    @include bp(d1){
-        margin:2em 0 1em;
-    }
+    // @include bp(d1){
+    //     margin:2em 0 1em;
+    // }
 }
 
 .mainMenuToggle{
