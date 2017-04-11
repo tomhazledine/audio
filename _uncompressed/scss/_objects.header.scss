@@ -23,6 +23,11 @@ header{
         position:fixed;
         padding-top:0;
         height:15em;
+        transition:top .2s;
+
+        &.menuOpen{
+            top:0;
+        }
 
         .headerInner{
             // display:none;
