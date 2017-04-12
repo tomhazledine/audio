@@ -24,7 +24,7 @@
 
                 <ul class="mainMenu clearfix" role="navigation">
                     {% for menuLink in page.menu %}
-                        <li><a href="#{{ menuLink.id }}">{{ menuLink.title }}</a></li>
+                        <li><a class="internal-link" href="#{{ menuLink.id }}">{{ menuLink.title }}</a></li>
                     {% endfor %}
                 </ul>
 
