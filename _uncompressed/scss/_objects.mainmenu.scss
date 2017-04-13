@@ -43,6 +43,25 @@
     }
 }
 
+.mainMenu.fixedMenu{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:3;
+    text-align:center;
+    position:fixed;
+    padding:1em 0;
+    margin:0;
+    display:block;
+    background:$white;
+    box-shadow:rgba($black,.2) 0 .1em .3em 0;
+    border-bottom:1px solid $primary;
+    @include bp(d1){
+        display:none;
+    }
+}
+
 .tuckedUp .mainMenu{
     @include bp(u1){
         margin:1em 0;

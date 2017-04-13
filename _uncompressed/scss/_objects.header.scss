@@ -6,10 +6,10 @@ header{
     width:100%;
     left:0;
     background:$white;
-    z-index:3;
+    z-index:4;
     transition:margin-bottom;
     transition-duration:1s;
-    padding-top:10em;
+    padding-top:2em;
     
     &.tuckedUp{
         @include bp(u1){
@@ -107,6 +107,9 @@ header{
     @include bp(d1){
         left:.5em;
     }
+    @include bp(u1){
+        display:none;
+    }
     .sideLogoSvg{
         width:2em;
         height:2em;
@@ -117,14 +120,21 @@ header{
     }
 }
 
-.tuckedUp .sideLogo{
+.fixedMenu .sideLogo{
     left:.5em;
+    @include bp(u1){
+        display:block;
+    }
 }
+
+// .tuckedUp .sideLogo{
+//     left:.5em;
+// }
 
 .moblieHeader{
     display:none;
     text-align:center;
-    margin-top:5em;
+    margin:5em 0;
     @include bp(d1){
         display:block;
     }

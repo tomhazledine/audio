@@ -42,6 +42,17 @@
 
     </header>
 
+    <ul class="mainMenu clearfix fixedMenu" role="navigation">
+        <a href="#top" class="sideLogo">
+            <svg class="sideLogoSvg">
+                <use xlink:href="#logo_plain"/>
+            </svg>
+        </a>
+        {% for menuLink in page.menu %}
+            <li><a class="internal-link" href="#{{ menuLink.id }}">{{ menuLink.title }}</a></li>
+        {% endfor %}
+    </ul>
+
     <div id="headerPlaceholder" class="headerPlaceholder"></div>
 
     <a href="https://github.com/tomhazledine/picobel" alt="Fork this project on Github" class="githubLink">

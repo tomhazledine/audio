@@ -29,12 +29,6 @@ callsToAction:
 
 Picobel.js (pronounced *peek-o-bell*, as in *decibel*) is a lightweight dependency-free Javascript tool that converts html audio tags into styleable markup.
 
-## Open beta: feedback welcome.
-
-While I've been using Picobel.js on my own projects for some time now, it has only recently been opened-up to the wider world. If you have any suggestions or feedback (or even complaints!), I'd love to hear them. The plan is to make this tool as good as possible before hitting the **Version 1.0** milestone.
-
-The easiest way to give me feedback is on Twitter, where my handle is [@thomashazledine](https://twitter.com/thomashazledine), or you can always email me directly at tom@tomhazledine.com.
-
 <div class="divider"></div>
 
 ## Why would I need this?
@@ -63,12 +57,12 @@ Into this:
 
 ## Installation
 
-To use **Picobel.js** you'll need to include the `picobel.min.js` file in your project. This needs to be called before your custom scripts, and ideally in the `<foot>` of your page.
+To use **Picobel.js** you'll need to include the `picobel.min.js` file ([found here](https://github.com/tomhazledine/picobel/blob/master/picobel.min.js)) in your project. This needs to be called before your custom scripts, and ideally in the `<foot>` of your page.
 
     <!-- Load Picobel -->
     <script type='text/javascript' src='picobel.min.js'></script>
 
-You will also need the CSS styles. Choose which "theme" you'd like to use, and load that stylesheet.
+You will also need the CSS styles. Choose which "theme" you'd like to use, and load that stylesheet. All current themes can be previewed in the [Picobel.js CodePen Collection](http://codepen.io/collection/XpZEor/), and all the css files can be found in the repo, [here](https://github.com/tomhazledine/picobel/tree/master/css).
 
     <!-- Load the Picobel CSS -->
     <link rel='stylesheet' href='basic.min.css' type='text/css'/>
