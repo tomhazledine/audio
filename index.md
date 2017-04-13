@@ -23,7 +23,7 @@ callsToAction:
 
 <div id="overview"></div>
 
-<audio src="http://audio.eatenbymonsters.com/reviews/coldWarKids/lostThatEasy.mp3" title="Lost that easy" data-artist="Cold War Kids" controls>
+<audio src="/files/lostThatEasy.mp3" title="Lost that easy" data-artist="Cold War Kids" controls>
     Your browser does not support the <code>audio</code> element.
 </audio>
 
