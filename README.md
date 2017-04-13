@@ -1,7 +1,7 @@
-# Style-Free Audio Player
+# Demo Page for Picobel.js
 
-## A lightweight style-free audio player.
+## A css-friendly audio player.
 
-A smooth user experience hinges on consistency. Every time you break from your brand's styleguide to include an external widget, you're adding inconsistency.
+Picobel.js (pronounced *peek-o-bell*, as in *decibel*) is a lightweight dependency-free Javascript tool that converts html audio tags into styleable markup.
 
-The **Style-Free Audio Player (SFAP)** aims to solve this problem for audio players. You bring the markup, you bring the CSS, SFAP brings the functionality.
+* View the main [repo for Picobel.js](https://github.com/tomhazledine/picobel).
