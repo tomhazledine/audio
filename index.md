@@ -29,6 +29,12 @@ callsToAction:
 
 Picobel.js (pronounced *peek-o-bell*, as in *decibel*) is a lightweight dependency-free Javascript tool that converts html audio tags into styleable markup.
 
+## Open beta: feedback welcome.
+
+While I've been using Picobel.js on my own projects for some time now, it has only recently been opened-up to the wider world. If you have any suggestions or feedback (or even complaints!), I'd love to hear them. The plan is to make this tool as good as possible before hitting the **Version 1.0** milestone.
+
+The easiest way to give me feedback is on Twitter, where my handle is [@thomashazledine](https://twitter.com/thomashazledine), or you can always email me directly at tom@tomhazledine.com.
+
 <div class="divider"></div>
 
 ## Why would I need this?
