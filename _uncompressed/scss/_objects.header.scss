@@ -1,24 +1,24 @@
 header{
-    // display:none;
+    position:relative;
     text-align:center;
     box-shadow:rgba($black,.2) 0 .1em .3em 0;
     border-bottom:1px solid $primary;
-    // position:fixed;
     width:100%;
-    // bottom:100%;
-    // margin-bottom:-30em;
     left:0;
     background:$white;
-    z-index:2;
+    z-index:3;
     transition:margin-bottom;
     transition-duration:1s;
     padding-top:10em;
-    // &.tuckedUp{
-    //     margin-bottom:-3em;
-    // }
+    
+    &.tuckedUp{
+        @include bp(u1){
+            position:fixed;
+            top:-31.2em;
+        }
+    }
+    
     @include bp(d1){
-        // margin-bottom:-3em;
-        // &.menuOpen,&.tuckedUp.menuOpen{
         top:-12em;
         position:fixed;
         padding-top:0;
@@ -28,17 +28,21 @@ header{
         &.menuOpen{
             top:0;
         }
-
-        .headerInner{
-            // display:none;
-            // margin-bottom:-13em;
-        }
         .siteName,
         .mainTagline,
         .mainLogo{
             display:none;
         }
-        // }
+    }
+}
+
+.headerPlaceholder{
+    display:none;
+    &.tuckedUp{
+        @include bp(u1){
+            display:block;
+            height:36.1em;
+        }
     }
 }
 
@@ -78,14 +82,6 @@ header{
     background-position:center;
 }
 
-
-// .menuTopHeight{
-//     padding-top:16em;
-//     @include bp(d1){
-//         padding-top:0em;
-//     }
-// }
-
 .mainTagline{
     font-family:$text;
     letter-spacing:0;
@@ -95,26 +91,18 @@ header{
         padding:0 1em;
         line-height:1.4;
     }
-    // box-shadow:rgba($black,.3) 0 .2em .5em 0;
 }
 
 .sideLogo{
     width:2em;
     height:2em;
-    // background:$primary;
     position:absolute;
     bottom:.5em;
     left:-3em;
-    // transition:left;
-    // transition-duration:1s;
     display:block;
     z-index:4;
-    // border-radius:1em;
-    // border:1em solid $primary;
-    // border-bottom-color:$black;
-    // border-right-color:$black;
     transform:scale(1);
-    transition:transform, left;// .2s;
+    transition:transform, left;
     transition-duration:.5s;
     @include bp(d1){
         left:.5em;
@@ -129,9 +117,9 @@ header{
     }
 }
 
-// .tuckedUp .sideLogo{
-//     left:.5em;
-// }
+.tuckedUp .sideLogo{
+    left:.5em;
+}
 
 .moblieHeader{
     display:none;

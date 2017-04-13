@@ -20,7 +20,7 @@
                 <use xlink:href="#audioLogo"/>
             </svg> -->
 
-            <nav class="mainMenuWrapper">
+            <nav id="mainMenu" class="mainMenuWrapper clearfix">
 
                 <ul class="mainMenu clearfix" role="navigation">
                     {% for menuLink in page.menu %}
@@ -28,19 +28,21 @@
                     {% endfor %}
                 </ul>
 
+                <a href="#top" class="sideLogo">
+                    <svg class="sideLogoSvg">
+                        <use xlink:href="#logo_plain"/>
+                    </svg>
+                </a>
+
                 <button id="mainMenuToggle" class="mainMenuToggle"><span class="navicon"></span><span class="visuallyhidden">Main Menu</span></button>
             </nav>
 
         </div>
 
-        <a href="#top" class="sideLogo">
-            <svg class="sideLogoSvg">
-                <use xlink:href="#logo_plain"/>
-            </svg>
-        </a>
-
 
     </header>
+
+    <div id="headerPlaceholder" class="headerPlaceholder"></div>
 
     <a href="https://github.com/tomhazledine/picobel" alt="Fork this project on Github" class="githubLink">
         <span>Get involved on Github</span>

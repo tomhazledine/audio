@@ -1,3 +1,7 @@
+.mainMenuWrapper{
+    position:relative;
+}
+
 .mainMenu{
     display:block;
     margin:2em 0;
@@ -40,10 +44,9 @@
 }
 
 .tuckedUp .mainMenu{
-    margin:1em 0;
-    // @include bp(d1){
-    //     margin:2em 0 1em;
-    // }
+    @include bp(u1){
+        margin:1em 0;
+    }
 }
 
 .mainMenuToggle{
