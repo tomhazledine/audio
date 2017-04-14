@@ -3,7 +3,7 @@ markdown: kramdown
 hightlighter: rouge
 kramdown:
   auto_ids: false
-description: A lightweight wrapper for HTML audio. Bring your own markup and CSS.
+description: A lightweight wrapper for HTML audio. Bring your own CSS.
 # url: http://picobel.dev # Local
 url: https://audio.tomhazledine.com # Live
 exclude: [config.rb,

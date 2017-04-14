@@ -57,7 +57,7 @@ Into this:
 
 ## Installation
 
-To use **Picobel.js** you'll need to include the `picobel.min.js` file ([found here](https://github.com/tomhazledine/picobel/blob/master/picobel.min.js)) in your project. This needs to be called before your custom scripts, and ideally in the `<foot>` of your page.
+To use **Picobel.js** you'll need to include the `picobel.min.js` file ([found here](https://github.com/tomhazledine/picobel/blob/master/picobel.min.js)) in your project. This needs to be called before your custom scripts, and ideally in the `<footer>` of your page.
 
     <!-- Load Picobel -->
     <script type='text/javascript' src='picobel.min.js'></script>
