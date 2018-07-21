@@ -43,12 +43,12 @@ The native html `<audio>` tag provides fantastic functionality, but gives you no
 
 Using Picobel you can turn this:
 
-![Native audio player](https://github.com/tomhazledine/picobel/blob/master/images/native_players.png)
+![Native audio player](/assets/images/native_players.png)
 _Default browser audio players_
 
 Into this:
 
-![Picobel-styled audio player](https://github.com/tomhazledine/picobel/blob/master/images/picobel_players.png)
+![Picobel-styled audio player](/assets/images/picobel_players.png)
 _Picobel-styled audio players_
 
 **Picobel** allows you to create custom styles for your audio players: providing cross-browser consistency and a seamless integration with your existing brand styles.
@@ -178,25 +178,25 @@ So if you wanted to use the "iTunes" theme, your Picobel call would look like th
 
 You can see them all in action in the [Picobel.js CodePen Collection](http://codepen.io/collection/XpZEor/), and see screenshots of each featured theme on this page:
 
-![Default theme](https://github.com/tomhazledine/picobel/blob/master/images/theme_basic.png)
+![Default theme](/assets/images/theme_basic.png)
 _Default theme. [View the this theme on CodePen](http://codepen.io/tomhazledine/pen/VpNqYO)_
 
-![Skeleton theme](https://github.com/tomhazledine/picobel/blob/master/images/theme_skeleton.png)
+![Skeleton theme](/assets/images/theme_skeleton.png)
 _Skeleton theme (use this as a jumping-off point for your own styles). [View the this theme on CodePen](http://codepen.io/tomhazledine/pen/zZXyGa)_
 
-![BBC iPlayer theme](https://github.com/tomhazledine/picobel/blob/master/images/theme_bbc.png)
+![BBC iPlayer theme](/assets/images/theme_bbc.png)
 _BBC iPlayer-esque theme. [View the this theme on CodePen](http://codepen.io/tomhazledine/pen/kXZaKL)_
 
-![iTunes theme](https://github.com/tomhazledine/picobel/blob/master/images/theme_itunes.png)
+![iTunes theme](/assets/images/theme_itunes.png)
 _iTunes-esque theme. [View the this theme on CodePen](http://codepen.io/tomhazledine/pen/NAyWQW)_
 
-![Soundcloud theme](https://github.com/tomhazledine/picobel/blob/master/images/theme_soundcloud.png)
+![Soundcloud theme](/assets/images/theme_soundcloud.png)
 _Soundcloud-esque theme. [View the this theme on CodePen](http://codepen.io/tomhazledine/pen/VpNqjJ)_
 
-![Pitchfork theme](https://github.com/tomhazledine/picobel/blob/master/images/theme_pitchfork.png)
+![Pitchfork theme](/assets/images/theme_pitchfork.png)
 _Pitchfork-esque theme. [View the this theme on CodePen](http://codepen.io/tomhazledine/pen/OpGrXN)_
 
-![Eaten by Monsters theme](https://github.com/tomhazledine/picobel/blob/master/images/theme_ebm.png)
+![Eaten by Monsters theme](/assets/images/theme_ebm.png)
 _Eaten by Monsters theme. [View the this theme on CodePen](http://codepen.io/tomhazledine/pen/gmyZLP)_
 
 <div class="divider" id="contribute"></div>
